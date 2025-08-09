@@ -8,6 +8,7 @@ const schems = SignupSchema;
 const model: SignupModel = createModel<SignupRecord>("Signup", schems);
 
 export default model;
+
 export const signupModel: SignupModel = model;
 
 
