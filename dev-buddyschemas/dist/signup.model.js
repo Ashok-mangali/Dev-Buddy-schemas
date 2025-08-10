@@ -1,5 +1,5 @@
 import { model as createModel } from "mongoose";
-import { SignupSchema } from "./signup.schema.js";
+import SignupSchema from "./signup.schema.js";
 const schems = SignupSchema;
 const model = createModel("Signup", schems);
 export default model;
