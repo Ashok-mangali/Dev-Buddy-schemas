@@ -18,6 +18,8 @@ export const SignupSchema = new Schema<SignupRecord>(
   { timestamps: true }
 );
 
+
+
 // Backwards-compat exports (legacy names)
 export const SignInputSchemas = SignupSchema;
 export const signInputSchems = SignupSchema;
