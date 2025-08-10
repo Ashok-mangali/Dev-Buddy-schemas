@@ -1,6 +1,6 @@
 import { model as createModel, type Model } from "mongoose";
 import type { SignupRecord } from "./signup.types.js";
-import { SignupSchema } from "./signup.schema.js";
+import SignupSchema from "./signup.schema.js";
 
 export type SignupModel = Model<SignupRecord>;
 

@@ -2,7 +2,7 @@ import { Schema } from "mongoose";
 import type { SignupRecord } from "./signup.types.js";
 
 // Mongoose schema for signup records
-export const SignupSchema = new Schema<SignupRecord>(
+const SignupSchema = new Schema<SignupRecord>(
   {
     name: { type: String, required: true, trim: true },
     email: {
@@ -21,6 +21,7 @@ export const SignupSchema = new Schema<SignupRecord>(
 
 
 // Backwards-compat exports (legacy names)
-export const SignInputSchemas = SignupSchema;
-export const signInputSchems = SignupSchema;
+const SignInputSchemas = SignupSchema;
+//export const signInputSchems = SignupSchema; 
+export default SignInputSchemas;
 
