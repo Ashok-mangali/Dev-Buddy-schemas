@@ -1,6 +1,6 @@
 {
   "name": "@dev-buddyschemas/dev-buddyschemas",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "All the schemas for Build-Buddy for backend",
   "type": "module",
   "main": "dist/index.js",
