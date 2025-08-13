@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { Schema, model } from "mongoose";
 import type { SignupRecord } from "./signup.types.js";
 
 // Mongoose schema for signup records
@@ -18,10 +18,4 @@ const SignupSchema = new Schema<SignupRecord>(
   { timestamps: true }
 );
 
-
-
-// Backwards-compat exports (legacy names)
-const SignInputSchemas = SignupSchema;
-//export const signInputSchems = SignupSchema; 
-export default SignInputSchemas;
-
+export default SignupSchema;

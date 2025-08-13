@@ -4,8 +4,8 @@ import SignupSchema from "./signup.schema.js";
 
 export type SignupModel = Model<SignupRecord>;
 
-const schems = SignupSchema;
-const model: SignupModel = createModel<SignupRecord>("Signup", schems);
+const schemas = SignupSchema;
+const model: SignupModel = createModel<SignupRecord>("Signup", schemas);
 
 export default model;
 
