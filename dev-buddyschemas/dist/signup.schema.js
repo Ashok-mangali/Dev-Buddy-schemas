@@ -1,6 +1,6 @@
 import { Schema } from "mongoose";
 // Mongoose schema for signup records
-export const SignupSchema = new Schema({
+const SignupSchema = new Schema({
     name: { type: String, required: true, trim: true },
     email: {
         type: String,
@@ -12,7 +12,5 @@ export const SignupSchema = new Schema({
     },
     password: { type: String, required: true },
 }, { timestamps: true });
-// Backwards-compat exports (legacy names)
-export const SignInputSchemas = SignupSchema;
-export const signInputSchems = SignupSchema;
+export default SignupSchema;
 //# sourceMappingURL=signup.schema.js.map
