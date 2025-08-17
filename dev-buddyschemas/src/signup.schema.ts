@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import mongoose, { Schema, model } from "mongoose";
 import type { SignupRecord } from "./signup.types.js";
 
 // Mongoose schema for signup records
@@ -18,4 +18,5 @@ const SignupSchema = new Schema<SignupRecord>(
   { timestamps: true }
 );
 
-export default SignupSchema;
+const SignupModel = mongoose.model("SignupModel", SignupSchema);
+export default SignupModel;

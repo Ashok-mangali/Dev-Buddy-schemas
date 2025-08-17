@@ -1,13 +1,9 @@
-import { Schema } from "mongoose";
+import mongoose from "mongoose";
 import type { SignupRecord } from "./signup.types.js";
-declare const SignupSchema: Schema<SignupRecord, import("mongoose").Model<SignupRecord, any, any, any, import("mongoose").Document<unknown, any, SignupRecord, any, {}> & SignupRecord & {
-    _id: import("mongoose").Types.ObjectId;
+declare const SignupModel: mongoose.Model<SignupRecord, {}, {}, {}, mongoose.Document<unknown, {}, SignupRecord, {}, {}> & SignupRecord & {
+    _id: mongoose.Types.ObjectId;
 } & {
     __v: number;
-}, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, SignupRecord, import("mongoose").Document<unknown, {}, import("mongoose").FlatRecord<SignupRecord>, {}, import("mongoose").ResolveSchemaOptions<import("mongoose").DefaultSchemaOptions>> & import("mongoose").FlatRecord<SignupRecord> & {
-    _id: import("mongoose").Types.ObjectId;
-} & {
-    __v: number;
-}>;
-export default SignupSchema;
+}, any, any>;
+export default SignupModel;
 //# sourceMappingURL=signup.schema.d.ts.map

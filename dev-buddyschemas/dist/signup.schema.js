@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 // Mongoose schema for signup records
 const SignupSchema = new Schema({
     name: { type: String, required: true, trim: true },
@@ -12,5 +12,6 @@ const SignupSchema = new Schema({
     },
     password: { type: String, required: true },
 }, { timestamps: true });
-export default SignupSchema;
+const SignupModel = mongoose.model("SignupModel", SignupSchema);
+export default SignupModel;
 //# sourceMappingURL=signup.schema.js.map

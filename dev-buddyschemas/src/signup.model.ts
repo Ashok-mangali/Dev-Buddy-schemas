@@ -1,14 +1,11 @@
-import { model as createModel, type Model } from "mongoose";
+import type { Model } from "mongoose";
 import type { SignupRecord } from "./signup.types.js";
-import SignupSchema from "./signup.schema.js";
+import SignupModel from "./signup.schema.js";
 
 export type SignupModel = Model<SignupRecord>;
 
-const schemas = SignupSchema;
-const model: SignupModel = createModel<SignupRecord>("Signup", schemas);
+export default SignupModel;
 
-export default model;
-
-export const signupModel: SignupModel = model;
+export const signupModel: SignupModel = SignupModel;
 
 
